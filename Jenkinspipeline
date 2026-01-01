@@ -2,18 +2,18 @@ pipeline {
     agent any
     stages {
         stage('Build') {
-            steps {
-                //
+            steps  {
+                echo " this is build step"
             }
         }
         stage('Test') {
             steps {
-                //
+                sh 'bash test.sh'
             }
         }
         stage('Deploy') {
             steps {
-                //
+                echo "successfully deployed"
             }
         }
     }
